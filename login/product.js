@@ -29,7 +29,7 @@ const app = Vue.createApp({
         });
     },
     getProduct() {
-      let productUrl = `https://vue3-course-api.hexschool.io/v2/api/danny21316/admin/products`;
+      let productUrl = `https://vue3-course-api.hexschool.io/v2/api/${apiPath}/admin/products`;
       axios
         .get(productUrl)
         .then((res) => {
